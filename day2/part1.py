@@ -2,6 +2,7 @@ from typing import List
 
 def is_safe(line: List[int]) -> bool:
 
+    direction = ""
     for i in range(1, len(line)):
 
         if abs(line[i] - line[i-1]) > 3:

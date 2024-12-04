@@ -1,14 +1,5 @@
 from typing import List
 
-# def _recurse(line, i):
-#     opt_2 = line[:i-1] + line[i:]
-#     print(f"Trying without line[{i-1}]({line[i-1]}): {opt_2}")
-#     r2 = is_safe(opt_2, depth=1)
-#     opt_1 = line[:i] + line[i+1:]
-#     print(f"Trying without line[{i}]({line[i]}): {opt_1}")
-#     r1 = is_safe(opt_1, depth=1)
-#     return r2 or r1
-
 def remove_one(line):
     for i in range(len(line)):
         if is_safe(line[:i] + line[i+1:]):
